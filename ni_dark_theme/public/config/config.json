@@ -1,0 +1,14 @@
+{
+    "desktop_show": [
+        ["POS","Sale"], 
+        ["Item","Item"],
+        ["Employee","Employee"],
+        ["Supplier","Supplier"],
+        ["Buying","Purchase"],
+        ["Customer","Customer"],
+        ["Stock","Stock"],
+        ["CRM","CRM"],
+        ["Setup","Setup"]
+    ],
+    "setup_show":[]
+}
