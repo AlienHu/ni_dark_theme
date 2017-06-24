@@ -17,6 +17,7 @@ ni_dark_theme/config/__init__.py
 ni_dark_theme/config/desktop.py
 ni_dark_theme/config/docs.py
 ni_dark_theme/ni_dark_theme/__init__.py
+ni_dark_theme/public/css/ni.dark.theme.css
 ni_dark_theme/templates/__init__.py
 ni_dark_theme/templates/generators/__init__.py
 ni_dark_theme/templates/pages/__init__.py

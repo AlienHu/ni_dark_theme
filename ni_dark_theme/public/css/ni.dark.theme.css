@@ -15,6 +15,7 @@
  * Portions copyright jQuery UI & Twitter Bootstrap
  */
 
+/* can overrude css using this file */
 
 /* Layout helpers
 ----------------------------------*/
@@ -6641,7 +6642,7 @@ button.close {
 .modal-body {
   position: relative;
   padding: 15px;
-  background-color: #2a3e5b;
+  background-color: #dce0e5;
 }
 .modal-footer {
   padding: 15px;
@@ -9699,7 +9700,7 @@ textarea.form-control {
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
-  background-color: #252526;
+  background-color: gray;
 }
 .link-select-row {
   padding: 5px;
@@ -10644,7 +10645,7 @@ a.close:focus {
   top: 41px;
   margin: auto;
   z-index: 101;
-  background-color: #dce0e5;
+  background-color: white;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
   border-bottom: 1px solid #282828;
 }
@@ -10851,8 +10852,8 @@ body[data-route="desktop"] .navbar-default {
   background-color: #2a3e5b!important;
   padding:34px;
   border-radius: 4px;
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   border-radius: 10px;
 }
 .case-label {
@@ -13374,3 +13375,50 @@ classes should alter those!
   background-color: #dce0e5!important;
 }
 li.list-link a.dropdown-toggle{display: none;}
+.pos-bill-wrapper button{
+  color: black!important;
+}
+.item-cart{
+  color:black;
+}
+.payment-toolbar button{
+  color:black;
+}
+.payment-toolbar button:hover{
+  color:#2a3e5b;
+}
+.case-wrapper{
+  padding:10px;
+}
+.custom-icon{
+  display: block;
+  position:relative;
+  width:80px;
+  height:80px;
+  background-size: cover;
+}
+
+
+.module-sidebar-nav li:nth-child(3), 
+.module-sidebar-nav li:nth-child(4),
+.module-sidebar-nav li:nth-child(5),
+.module-sidebar-nav li:nth-child(6),
+.module-sidebar-nav li:nth-child(7),
+.module-sidebar-nav li:nth-child(8),
+.module-sidebar-nav li:nth-child(10),
+.module-sidebar-nav li:nth-child(11),
+.module-sidebar-nav li:nth-child(13),
+.module-sidebar-nav li:nth-child(15),
+.module-sidebar-nav li:nth-child(16),
+.module-sidebar-nav li:nth-child(17)
+{
+  display: none!important;
+}
+.assigned-to-me{
+  display: none!important;
+}
+/* hide setup desktop icon options */
+div.modules-setup-icons > div.checkbox:nth-child(1){
+  /*display:none!important;*/
+  /*background-color: red!important;*/
+}
