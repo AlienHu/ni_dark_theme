@@ -13393,9 +13393,10 @@ li.list-link a.dropdown-toggle{display: none;}
 .custom-icon{
   display: block;
   position:relative;
-  width:100px;
-  height:100px;
+  width:80%;
+  height:80%;
   background-size: cover;
+  background-repeat: no-repeat!important;
 }
 
 
@@ -13451,6 +13452,7 @@ div.modules-setup-icons > div.checkbox:nth-child(1){
   height:100%!important;
   top:0!important;
   right:0!important;
+  z-index: 100!important;
 }
 .case-label{
   display:block!important;
@@ -13461,7 +13463,12 @@ div.modules-setup-icons > div.checkbox:nth-child(1){
   margin:0!important;
   padding:0!important;
   right:0!important;
+  z-index: 10!important;
 }
 .case-wrapper .circle{
   display:none!important;
 }
+.toggle-filter{
+  color:black!important;
+}
+.app-icon 
