@@ -64,6 +64,6 @@ $(document).ready(function(){
     var headerdropdowns=$('.navbar-default .container .dropdown-toggle');
     var hl=headerdropdowns.length;
     // console.log('dd: '+hl);
-    $(headerdropdowns[hl-2]).hide();
-    $(headerdropdowns[hl-1]).hide();
+    $(headerdropdowns[hl-2]).hide(); // help
+    $(headerdropdowns[hl-1]).hide(); // notification
 });

@@ -13425,3 +13425,22 @@ div.modules-setup-icons > div.checkbox:nth-child(1){
 .navbar-default .container .dropdown-toggle:last-child span{
   display: none!important;
 }
+.section-head a{
+  color:black!important;
+  font-size: 16px!important;
+}
+.form-dashboard-section h6{
+  color:black!important;
+}
+.form-dashboard-section a{
+  color: black!important;
+}
+.form-column .user-role .grey{
+  color:black!important;
+}
+.grey{
+  color:black!important;
+}
+.list-item--head .list-col-title{
+  color:white!important;
+}
