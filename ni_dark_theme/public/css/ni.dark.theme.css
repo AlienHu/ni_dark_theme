@@ -13393,8 +13393,8 @@ li.list-link a.dropdown-toggle{display: none;}
 .custom-icon{
   display: block;
   position:relative;
-  width:80px;
-  height:80px;
+  width:100px;
+  height:100px;
   background-size: cover;
 }
 
@@ -13443,4 +13443,25 @@ div.modules-setup-icons > div.checkbox:nth-child(1){
 }
 .list-item--head .list-col-title{
   color:white!important;
+}
+.app-icon{
+  background-color: transparent!important;
+  position:absolute!important;
+  width:100%!important;
+  height:100%!important;
+  top:0!important;
+  right:0!important;
+}
+.case-label{
+  display:block!important;
+  position:absolute!important;
+  bottom:10px!important;
+  text-align: center!important;
+  width:100%!important;
+  margin:0!important;
+  padding:0!important;
+  right:0!important;
+}
+.case-wrapper .circle{
+  display:none!important;
 }
