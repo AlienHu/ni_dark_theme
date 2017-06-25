@@ -8,7 +8,8 @@
         ["Customer","Customer"],
         ["Stock","Stock"],
         ["CRM","CRM"],
-        ["Setup","Setup"]
+        ["Setup","Setup"],
+        ["Sales Invoice","Invoice"]
     ],
     "setup_show":[]
 }

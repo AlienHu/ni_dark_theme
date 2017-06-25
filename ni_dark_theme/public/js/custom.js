@@ -59,4 +59,11 @@ $(document).ready(function(){
 
         });
     });
+
+    // hide help and notification from top nav menu
+    var headerdropdowns=$('.navbar-default .container .dropdown-toggle');
+    var hl=headerdropdowns.length;
+    // console.log('dd: '+hl);
+    $(headerdropdowns[hl-2]).hide();
+    $(headerdropdowns[hl-1]).hide();
 });

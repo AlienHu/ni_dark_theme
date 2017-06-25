@@ -13421,3 +13421,7 @@ div.modules-setup-icons > div.checkbox:nth-child(1){
   /*display:none!important;*/
   /*background-color: red!important;*/
 }
+
+.navbar-default .container .dropdown-toggle:last-child span{
+  display: none!important;
+}
