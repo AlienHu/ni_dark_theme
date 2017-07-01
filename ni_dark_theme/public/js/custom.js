@@ -3,18 +3,36 @@
 ** to override css and components
 */
 
+/*
+** ABOUT config.json
+**
+** obey: true/false to apply this config [boolean]
+**
+** name: module name [String, Case Insensitive]
+** enable: true/false to enable the module [boolean]
+** desktop: true/false to show/hide icon on desktop [boolean]
+** [NOTE] icon will be visible only when enable and desktop both is set to true
+** 
+** label: label name to show [String, OPTIONAL]
+** icon: icon to show [String, icon name]
+** [NOTE]: icon should be in public/images/
+**
+** color: background-color of icon [valid color name of #hex value]
+*/
+
+
+
 $(document).ready(function(){
-    
     // get dekstop icon name from config/config.json
     var wrappers= $('.case-wrapper');
-    var newLabel= "";
     $.getJSON('/assets/ni_dark_theme/config/config.json', function(data) {
+        if(data.obey!=true) return;
         var desktopModules=[];
-        var desktopLabels=[];
-        $.each(data.desktop_show, function(key, val) {
-            desktopModules.push(val[0]);
-            desktopLabels.push(val[1]);
+        $.each(data.icons, function(key, val) {
+            // push module names to array
+            desktopModules.push(val['name'].toLowerCase());
         })
+
         jQuery.each(wrappers, function(index, item) {
             var parent=wrappers[index];
             var result=$(parent).find('span');
@@ -22,7 +40,8 @@ $(document).ready(function(){
             var preIcon=$(parent).find('i');
             $(preIcon).remove();
             var temp=$(parent).find('.app-icon');
-            var label=result.text();
+            var label=result.text().toLowerCase();
+
             // alert(label);
             // console.log('before checked '+label);
             // if first three char are numbers
@@ -40,18 +59,23 @@ $(document).ready(function(){
                 label=label.substr(1,label.length);
                 console.log('match for 1st char');
             }
-            // console.log('after checked '+label);
-
-            //console.log(label);
-            //var match= jQuery.inArray( label, configData );
-            //console.log('match value: '+match);
-            var matchPos=jQuery.inArray( label, desktopModules );
+            var matchPos=jQuery.inArray( label, desktopModules);
+            
             label=desktopModules[matchPos];
-            if( matchPos >= 0){
+            if( matchPos >= 0 && data.icons[matchPos]['desktop']==true && data.icons[matchPos]['enable']==true){
                 $(temp).append('<i class="custom-icon"></i>');
                 var tempI=$(parent).find('.custom-icon');
-                $(tempI).css('background','url("/assets/ni_dark_theme/img/'+label.toLowerCase().replace(' ','')+'.svg")');
-                $(result).text(desktopLabels[matchPos]);
+                if(data.icons[matchPos]['icon']!="")
+                    $(tempI).css('background','url("/assets/ni_dark_theme/img/'+data.icons[matchPos]['icon']+'")');
+                else
+                    $(tempI).css('background','url("/assets/ni_dark_theme/img/default.svg")');
+                if(data.icons[matchPos]['label']!="")
+                    $(result).text(data.icons[matchPos]['label']);
+                // $(temp).css('background-color',data.icons[matchPos]['color']);
+                // $(temp).css('background-color','red');
+                if(data.icons[matchPos]['color']!="")
+                    $(parent).css('background-color',data.icons[matchPos]['color']);
+                
             }
             else{
                 $(parent).hide();
