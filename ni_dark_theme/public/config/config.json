@@ -31,7 +31,7 @@
             "desktop":true,
             "label":"Items",
             "icon":"items.svg",
-            "color":"yellow"
+            "color":""
         },
         {
             "name":"Website",
@@ -151,7 +151,7 @@
             "desktop":true,
             "label":"Accounts",
             "icon":"accounts.svg",
-            "color":"#c2efec"
+            "color":""
         },
         {
             "name":"Contacts",

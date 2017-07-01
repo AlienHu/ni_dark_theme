@@ -20,6 +20,17 @@
 ** color: background-color of icon [valid color name of #hex value]
 */
 
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+// alert(getParameterByName('user'));
+
 
 
 $(document).ready(function(){
@@ -90,4 +101,25 @@ $(document).ready(function(){
     // console.log('dd: '+hl);
     $(headerdropdowns[hl-2]).hide(); // help
     $(headerdropdowns[hl-1]).hide(); // notification
+    // $('img[src$=".svg"]').each(function() {
+    //     var $img = jQuery(this);
+    //     var imgURL = $img.attr('src');
+    //     var attributes = $img.prop("attributes");
+
+    //     $.get(imgURL, function(data) {
+    //         // Get the SVG tag, ignore the rest
+    //         var $svg = jQuery(data).find('svg');
+
+    //         // Remove any invalid XML tags
+    //         $svg = $svg.removeAttr('xmlns:a');
+
+    //         // Loop through IMG attributes and apply on SVG
+    //         $.each(attributes, function() {
+    //             $svg.attr(this.name, this.value);
+    //         });
+
+    //         // Replace IMG with SVG
+    //         $img.replaceWith($svg);
+    //     }, 'xml');
+    // });
 });
