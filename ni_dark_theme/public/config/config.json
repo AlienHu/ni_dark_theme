@@ -79,7 +79,7 @@
             "desktop":true,
             "label":"",
             "icon":"sales_invoice.svg",
-            "color":"#dcf2ab"
+            "color":""
         },
         {
             "name":"Setup",
@@ -175,7 +175,7 @@
             "desktop":true,
             "label":"",
             "icon":"task.svg",
-            "color":"#c1daf2"
+            "color":""
         },
         {
             "name":"Buying",
@@ -199,7 +199,7 @@
             "desktop":true,
             "label":"",
             "icon":"to_do.svg",
-            "color":"#f9f8b6"
+            "color":""
         },
         {
             "name":"CRM",
