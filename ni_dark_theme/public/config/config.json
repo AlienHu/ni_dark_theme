@@ -100,7 +100,7 @@
         {
             "name":"Purchase Order",
             "enable":true,
-            "desktop":false,
+            "desktop":true,
             "label":"",
             "icon":"purchase_order.svg",
             "color":""
@@ -124,7 +124,7 @@
         {
             "name":"Warranty Claim",
             "enable":true,
-            "desktop":false,
+            "desktop":true,
             "label":"",
             "icon":"warranty_claim.svg",
             "color":""
