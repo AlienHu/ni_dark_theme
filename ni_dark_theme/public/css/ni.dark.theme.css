@@ -13399,7 +13399,7 @@ li.list-link a.dropdown-toggle{display: none;}
 }
 
 
-.module-sidebar-nav li:nth-child(3), 
+/*.module-sidebar-nav li:nth-child(3), 
 .module-sidebar-nav li:nth-child(4),
 .module-sidebar-nav li:nth-child(5),
 .module-sidebar-nav li:nth-child(6),
@@ -13412,7 +13412,7 @@ li.list-link a.dropdown-toggle{display: none;}
 .module-sidebar-nav li:nth-child(17)
 {
   display: none!important;
-}
+}*/
 .assigned-to-me{
   display: none!important;
 }
@@ -13470,4 +13470,3 @@ div.modules-setup-icons > div.checkbox:nth-child(1){
 .toggle-filter{
   color:black!important;
 }
-svg{fill: white!important;}
