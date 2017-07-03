@@ -21,8 +21,8 @@
             "name":"File Manager",
             "enable":true,
             "desktop":true,
-            "label":"file_manager.svg",
-            "icon":"",
+            "label":"",
+            "icon":"file_manager.svg",
             "color":""
         },
         {
@@ -351,6 +351,14 @@
             "desktop":true,
             "label":"",
             "icon":"schools.svg",
+            "color":""
+        },
+        {
+            "name":"Explore",
+            "enable":true,
+            "desktop":true,
+            "label":"",
+            "icon":"explore.svg",
             "color":""
         }
     ]
