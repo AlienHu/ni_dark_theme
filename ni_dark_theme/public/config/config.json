@@ -290,7 +290,7 @@
             "color":""
         },
         {
-            "name":"Student Attendance",
+            "name":"Attendance",
             "enable":true,
             "desktop":true,
             "label":"",
@@ -309,7 +309,7 @@
             "name":"Program",
             "enable":true,
             "desktop":true,
-            "label":"",
+            "label":"Classes",
             "icon":"program.svg",
             "color":""
         },
@@ -338,7 +338,7 @@
             "color":""
         },
         {
-            "name":"Rooms",
+            "name":"Room",
             "enable":true,
             "desktop":true,
             "label":"",
