@@ -13470,3 +13470,6 @@ div.modules-setup-icons > div.checkbox:nth-child(1){
 .toggle-filter{
   color:black!important;
 }
+#toolbar-user li:nth-child(2),#toolbar-user li:nth-child(1){
+  display: none!important;
+}
