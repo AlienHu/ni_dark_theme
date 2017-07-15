@@ -309,7 +309,7 @@
             "name":"Program",
             "enable":true,
             "desktop":true,
-            "label":"Classes",
+	    "label":"Program",
             "icon":"program.svg",
             "color":""
         },
