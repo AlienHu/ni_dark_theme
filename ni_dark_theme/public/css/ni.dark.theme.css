@@ -13473,3 +13473,6 @@ div.modules-setup-icons > div.checkbox:nth-child(1){
 #toolbar-user li:nth-child(2),#toolbar-user li:nth-child(1){
   display: none!important;
 }
+input[type="checkbox"]:before{
+  color:tomato!important;
+}
